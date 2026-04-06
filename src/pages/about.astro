@@ -7,13 +7,14 @@ const identity = {
   hobbies: ["photography", "birdwatching", "baseball"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro"];
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
+
     <style>
       h1 {
         color: purple;
@@ -21,4 +22,12 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
       }
     </style>
   </head>
+  <body>
+    <h1>{pageTitle}</h1>
+
+    <p>My name is {identity.firstName}</p>
+    <p>I like {identity.hobbies.join(", ")}</p>
+
+    <p>Skills: {skills.join(", ")}</p>
+  </body>
 </html>
