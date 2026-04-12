@@ -1,3 +1,11 @@
+.menu {
+  background-color: #0d0950;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+}
 html {
   background-color: #f1f5f9;
   font-family: sans-serif;
@@ -19,3 +27,9 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
 }
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
+}
+ .menu {
+    display: none;
+  }
